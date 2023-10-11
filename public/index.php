@@ -53,3 +53,6 @@ $response = $kernel->handle(
 )->send();
 
 $kernel->terminate($request, $response);
+
+$client = new Satusehat\Integration\OAuth2Client;
+dd($client->token());

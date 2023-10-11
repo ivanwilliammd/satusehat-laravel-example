@@ -20,6 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/token', [App\Http\Controllers\FHIRController::class, 'token'])->name('token');
 
 Route::middleware('auth')->group(function () {
     Route::view('about', 'about')->name('about');

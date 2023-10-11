@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "06e809a813f0bf9775d535c2f4ce769b",
+    "content-hash": "6ddeec9fd95fc291e85f172f02f25424",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -1012,6 +1012,76 @@
                 }
             ],
             "time": "2023-08-27T10:19:19+00:00"
+        },
+        {
+            "name": "ivanwilliammd/satusehat-integration",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ivanwilliammd/satusehat-integration.git",
+                "reference": "dfd5241318f1a6c4a982dfbaa498404befe5d4c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ivanwilliammd/satusehat-integration/zipball/dfd5241318f1a6c4a982dfbaa498404befe5d4c8",
+                "reference": "dfd5241318f1a6c4a982dfbaa498404befe5d4c8",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.8",
+                "illuminate/config": "^10.25",
+                "illuminate/database": "^10.25",
+                "illuminate/support": "^10.25",
+                "php": "^8.1",
+                "vlucas/phpdotenv": "^5.5"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "pestphp/pest": "^2.15",
+                "spatie/ray": "^1.28"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Satusehat\\Integration\\SatusehatIntegrationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Satusehat\\fhir\\": "src/FHIR/Encounter",
+                    "Satusehat\\Integration\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ivanwilliammd",
+                    "email": "ivanwilliam.md@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Build SATUSEHAT FHIR Object in Easy Way",
+            "homepage": "https://github.com/ivanwilliammd/satusehat-integration",
+            "keywords": [
+                "ivanwilliammd",
+                "satusehat-integration"
+            ],
+            "support": {
+                "issues": "https://github.com/ivanwilliammd/satusehat-integration/issues",
+                "source": "https://github.com/ivanwilliammd/satusehat-integration/tree/0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ivanwilliammd",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-09-30T15:03:25+00:00"
         },
         {
             "name": "jeroennoten/laravel-adminlte",
