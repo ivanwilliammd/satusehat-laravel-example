@@ -18,6 +18,7 @@ class FhirController extends Controller
     public function encounter()
     {
         $encounter = new Encounter;
-        dd($encounter);
+        $encounter->addRegistrationId('123456789');
+        dd($encounter->getEncounter());
     }
 }
