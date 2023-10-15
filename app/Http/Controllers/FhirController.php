@@ -19,6 +19,6 @@ class FhirController extends Controller
     {
         $encounter = new Encounter;
         $encounter->addRegistrationId('123456789');
-        dd($encounter->getEncounter());
+        dd($encounter->json());
     }
 }
