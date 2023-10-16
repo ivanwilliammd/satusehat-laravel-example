@@ -12,13 +12,17 @@ class FhirController extends Controller
     public function token()
     {
         $client = new OAuth2Client;
-        dd($client->token());
+        $token = $client->token();
+
+        return view('fhirdemo', compact('token'));
     }
 
     public function encounter()
     {
         $encounter = new Encounter;
         $encounter->addRegistrationId('123456789');
-        dd($encounter->json());
+        $encounter = $encounter->json();
+
+        return view('fhirdemo', compact('encounter'));
     }
 }
