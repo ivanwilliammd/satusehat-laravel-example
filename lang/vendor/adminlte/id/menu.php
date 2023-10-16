@@ -16,6 +16,7 @@ return [
     'important'                     => 'Penting',
     'warning'                       => 'Peringatan',
     'information'                   => 'Informasi',
+    'users'                         => 'Daftar Pengguna',
     'satusehat_test'                => 'SATUSEHAT TEST',
     'access_token'                  => 'Access Token',
     'kyc'                           => 'KYC',

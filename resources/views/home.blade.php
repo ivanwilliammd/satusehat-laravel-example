@@ -11,7 +11,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <p class="mb-0">You are logged in!</p>
+                    <p class="mb-0">You are logged in as : <b>{{ Auth::user()->name }}</b></p>
                 </div>
             </div>
         </div>

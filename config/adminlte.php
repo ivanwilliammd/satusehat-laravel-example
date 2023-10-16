@@ -319,11 +319,11 @@ return [
         //     'label_color' => 'success',
         // ],
         ['header' => 'account_settings'],
-        // [
-        //     'text' => 'profile',
-        //     'url'  => 'profile',
-        //     'icon' => 'fas fa-fw fa-user',
-        // ],
+        [
+            'text' => 'users',
+            'url'  => 'users',
+            'icon' => 'fas fa-fw fa-user',
+        ],
         [
             'text' => 'change_password',
             'url'  => 'profile',
