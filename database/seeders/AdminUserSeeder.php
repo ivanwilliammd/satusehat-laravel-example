@@ -19,12 +19,7 @@ class AdminUserSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@satusehatlaravel.com',
             'password' => bcrypt('satusehatindonesia'),
-        ]);
-
-        User::create([
-            'name' => 'Secondary User',
-            'email' => 'second@satusehatlaravel.com',
-            'password' => bcrypt('seconduser'),
+            'nik' => '9999999999999999',
         ]);
     }
 }

@@ -80,7 +80,7 @@
                         </div>
 
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary">{{ __('Submit') }}</button>
+                            <button type="submit" class="btn btn-primary">Ubah Password</button>
                         </div>
                     </form>
                 </div>
