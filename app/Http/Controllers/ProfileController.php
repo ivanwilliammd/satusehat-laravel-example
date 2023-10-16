@@ -9,7 +9,8 @@ class ProfileController extends Controller
 {
     public function show()
     {
-        return view('auth.profile');
+        // return view('auth.profile');
+        return view('profile');
     }
 
     public function update(ProfileUpdateRequest $request)
@@ -23,6 +24,7 @@ class ProfileController extends Controller
             'email' => $request->email,
         ]);
 
-        return redirect()->back()->with('success', 'Profile updated.');
+        // return redirect()->back()->with('success', 'Profile updated.');
+        return redirect()->route('home')->with('success', 'Profile updated.');
     }
 }
