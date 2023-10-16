@@ -329,6 +329,27 @@ return [
             'url'  => 'profile',
             'icon' => 'fas fa-fw fa-lock',
         ],
+        ['header' => 'satusehat_test'],
+        [
+            'text' => 'access_token',
+            'url'  => 'token',
+            'icon' => 'fas fa-fw fa-lock',
+        ],
+        [
+            'text' => 'kyc',
+            'url'  => 'kyc',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
+            'text' => 'encounter',
+            'url'  => 'encounter',
+            'icon' => 'fas fa-fw fa-hospital',
+        ],
+        [
+            'text' => 'condition',
+            'url'  => 'condition',
+            'icon' => 'fas fa-fw fa-stethoscope',
+        ],
         // [
         //     'text'    => 'multilevel',
         //     'icon'    => 'fas fa-fw fa-share',
