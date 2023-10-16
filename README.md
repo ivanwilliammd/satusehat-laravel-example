@@ -1,6 +1,37 @@
 # SATUSEHAT EMR with SATUSEHAT Integration Library
 Status : In Progress
 
+See [SATUSEHAT Integration Library](https://github.com/ivanwilliammd/satusehat-integration) for more detailed feature
+
+## Fitur SATUSEHAT Fase 1 Rawat Jalan
+Based on : SATUSEHAT Mandate PMK 24 tahun 2022 (Deadline December 2023) : 
+- [ ] OAuth2 (POST)
+- [ ] KYC SATUSEHAT Platform
+
+- [ ] Organization POST
+- [ ] Organization PUT
+- [ ] Organization GET
+
+- [ ] Location POST
+- [ ] Location PUT
+- [ ] Location GET
+
+- [ ] Patient GET by NIK
+- [ ] Patient GET by ID
+
+- [ ] Practitioner GET by NIK
+- [ ] Practitioner GET by ID
+
+- [ ] Encounter POST
+- [ ] Encounter PUT
+- [ ] Encounter GET
+
+- [ ] Condition POST
+- [ ] Condition PUT
+- [ ] Condition GET
+
+
+
 ## Step by step to initialize 
 1. Initialize Laravel : <br>```composer create-project laravel/laravel satusehat-laravel-example```
 2. Install [SATUSEHAT Integration Library](https://github.com/ivanwilliammd/satusehat-integration) : <br>```composer require ivanwilliammd/satusehat-integration```
