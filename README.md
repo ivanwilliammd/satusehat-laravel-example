@@ -6,7 +6,7 @@ See [SATUSEHAT Integration Library](https://github.com/ivanwilliammd/satusehat-i
 ## Fitur SATUSEHAT Fase 1 Rawat Jalan
 Based on : SATUSEHAT Mandate PMK 24 tahun 2022 (Deadline December 2023) : 
 - [x] OAuth2 (POST)
-- [ ] KYC SATUSEHAT Platform
+- [x] KYC SATUSEHAT Platform
 
 - [ ] Organization POST
 - [ ] Organization PUT
