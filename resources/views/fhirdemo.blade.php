@@ -18,6 +18,13 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-12">
+            @if($kyc_iframe)
+                <a href="{{ route('kyc_url') }}" class="btn btn-success" target="_blank">Buka di tab baru</a>
+            @endif
+        </div>
+    </div>
 @stop
 
 

@@ -14,6 +14,12 @@ class FhirController extends Controller
     // KYC Example
     public function kyc()
     {
+        $kyc_iframe = true;
+        return view('fhirdemo', compact('kyc_iframe'));
+    }
+
+    public function kyc_url()
+    {
         // Check SATUSEHAT_ENV if not PROD, redirect to home with error message
         if(env('SATUSEHAT_ENV')!="PROD"){
             return redirect('home')->with('error', 'KYC memerlukan settingan environment SATUSEHAT Production.');
@@ -25,7 +31,6 @@ class FhirController extends Controller
         $json = $kyc->generateUrl(Auth::user()->name, Auth::user()->nik);
         $kyc_link = json_decode($json, true);
 
-        dd($kyc_link['data']['url']);
         return redirect($kyc_link['data']['url']);
     }
 

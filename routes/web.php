@@ -34,6 +34,7 @@ Route::middleware('auth')->group(function () {
     Route::put('profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
 
     Route::get('/kyc', [App\Http\Controllers\FHIRController::class, 'kyc'])->name('kyc');
+    Route::get('/kyc_url', [App\Http\Controllers\FHIRController::class, 'kyc_url'])->name('kyc_url');
     Route::get('/token', [App\Http\Controllers\FHIRController::class, 'token'])->name('token');
     Route::get('/encounter', [App\Http\Controllers\FHIRController::class, 'encounter'])->name('encounter');
 });
