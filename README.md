@@ -59,9 +59,14 @@ Password : satueshatindonesia
 8. Change the email and password of main master user from menu ```Ubah Kata Sandi```
 
 ### KYC Feature (SATUSEHAT Production Only)
-1.  Ensure that you have set your ```SATUSEHAT_ENV``` at .env file with ```PROD```
-2.  Add new user from menu ```Daftar Pengguna``` and create new user using valid ```NIK``` and ```Nama``` to be recorded as verificator SATUSEHAT Platform
+1. Ensure that you have set your ```SATUSEHAT_ENV``` at .env file with ```PROD```
+2. Add new user from menu ```Daftar Pengguna``` and create new user using valid ```NIK``` and ```Nama``` to be recorded as verificator SATUSEHAT Platform
 3. Login with the user you create, and you could access the KYC menu right now
 
+
+### Tips for setting up in local (Windows)
+1. Ensure your ```php.ini``` already enabled ```php_openssl``` extension
+2. Ensure you already have your ```OPENSSL_CONF``` pointing to ```openssl.cnf``` 
+3. XAMPP openssl.cnf path ```{XAMPP_INSTALLATION_DIRECTORY}\php\extras\ssl\openssl.cnf```
 
 
