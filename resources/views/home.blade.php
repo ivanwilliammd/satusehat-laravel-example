@@ -24,8 +24,8 @@
 @endpush
 
 @push('js')
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     @if ($message = Session::get('success'))
-        <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
         <script>
             toastr.options = {
                 "closeButton": true,
@@ -40,6 +40,24 @@
             }
 
             toastr.success('{{ $message }}')
+        </script>
+    @endif
+
+    @if ($message = Session::get('error'))
+        <script>
+            toastr.options = {
+                "closeButton": true,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+
+            toastr.error('{{ $message }}')
         </script>
     @endif
 @endpush

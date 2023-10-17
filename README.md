@@ -1,7 +1,7 @@
 # SATUSEHAT EMR with SATUSEHAT Integration Library
 Status : In Progress
 
-See [SATUSEHAT Integration Library](https://github.com/ivanwilliammd/satusehat-integration) for more detailed feature
+See [SATUSEHAT Integration Library](https://github.com/ivanwilliammd/satusehat-integration) for more detailed feature or direct installation
 
 ## Fitur SATUSEHAT Fase 1 Rawat Jalan
 Based on : SATUSEHAT Mandate PMK 24 tahun 2022 (Deadline December 2023) : 
@@ -33,7 +33,14 @@ Based on : SATUSEHAT Mandate PMK 24 tahun 2022 (Deadline December 2023) :
 
 ## How to use
 
-### Installation steps
+## Option 1 : Use the library
+1. Install the library by running ```composer require ivanwilliammd/satusehat-integration```
+2. Setup your .env based on .env.example template
+3. See [SATUSEHAT Integration Library](https://github.com/ivanwilliammd/satusehat-integration) for more detailed feature or direct installation
+
+## Option 2 : Use this project as-is
+
+### Installation steps (optional for new project)
 1. Clone this repository ```git clone```
 2. Install dependencies by running ```composer install```
 3. Create composer autoload by running ```composer dumpauto```
@@ -51,9 +58,10 @@ Password : satueshatindonesia
 ```
 8. Change the email and password of main master user from menu ```Ubah Kata Sandi```
 
-### KYC Feature
-1.  Add new user from menu ```Daftar Pengguna``` and create new user using valid ```NIK``` and ```Nama``` to be recorded as verificator SATUSEHAT Platform
-2. Login with the user you create, and you could access the KYC menu right now
+### KYC Feature (SATUSEHAT Production Only)
+1.  Ensure that you have set your ```SATUSEHAT_ENV``` at .env file with ```PROD```
+2.  Add new user from menu ```Daftar Pengguna``` and create new user using valid ```NIK``` and ```Nama``` to be recorded as verificator SATUSEHAT Platform
+3. Login with the user you create, and you could access the KYC menu right now
 
 
 
