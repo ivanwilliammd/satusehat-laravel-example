@@ -51,9 +51,9 @@ class FhirController extends Controller
     public function encounter()
     {
         $encounter = new Encounter;
-        $statusHistory = ['arrived' => '{timestamp_kedatangan}',
-                    'inprogress' => '{timestamp_pemeriksaan}',
-                    'finished' => '{timestamp_pulang}'];
+        $statusHistory = ['arrived' => Carbon::now()->subMinutes(15)->toDateTimeString(),
+                    'inprogress' => Carbon::now()->subMinutes(5)->toDateTimeString(),
+                    'finished' => Carbon::now()->toDateTimeString()];
 
         $encounter->addRegistrationId('123456789'); // unique string free text (increments / UUID)
         $encounter->addStatusHistory($statusHistory); // array of timestamp
@@ -73,12 +73,12 @@ class FhirController extends Controller
         // Condition
         $condition = new Condition;
         $condition->addClinicalStatus('active'); // active, inactive, resolved. Default bila tidak dideklarasi = active
-        $condition->addCategory('Diagnosis'); // Diagnosis, Keluhan. Default : Diagnosis
+        $condition->addCategory('diagnosis'); // Diagnosis, Keluhan. Default : Diagnosis
         $condition->addCode('J06.9'); // Kode ICD10
         $condition->setSubject('P12312312123', 'TESTER'); // ID SATUSEHAT Pasien dan Nama SATUSEHAT
         $condition->setEncounter(Str::uuid()->toString()); // ID SATUSEHAT Encounter
-        $condition->setOnsetDateTime(Carbon::now()); // timestamp onset. Timestamp sekarang
-        $condition->setRecordedDate(Carbon::now()); // timestamp recorded. Timestamp sekarang
+        $condition->setOnsetDateTime(Carbon::now()->toDateTimeString()); // timestamp onset. Timestamp sekarang
+        $condition->setRecordedDate(Carbon::now()->toDateTimeString()); // timestamp recorded. Timestamp sekarang
         $condition = $condition->json();
 
 

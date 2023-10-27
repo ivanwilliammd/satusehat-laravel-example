@@ -1019,12 +1019,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ivanwilliammd/satusehat-integration.git",
-                "reference": "09585e9dea396d5a0b78a1fd96ddf48d1967e725"
+                "reference": "6623b3c160a4a8e139264ff505584617bcce3dda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ivanwilliammd/satusehat-integration/zipball/09585e9dea396d5a0b78a1fd96ddf48d1967e725",
-                "reference": "09585e9dea396d5a0b78a1fd96ddf48d1967e725",
+                "url": "https://api.github.com/repos/ivanwilliammd/satusehat-integration/zipball/6623b3c160a4a8e139264ff505584617bcce3dda",
+                "reference": "6623b3c160a4a8e139264ff505584617bcce3dda",
                 "shasum": ""
             },
             "require": {
@@ -1032,6 +1032,7 @@
                 "illuminate/config": "^10.25",
                 "illuminate/database": "^10.25",
                 "illuminate/support": "^10.25",
+                "jeroenzwart/laravel-csv-seeder": "^1.6",
                 "php": "^8.1",
                 "phpseclib/phpseclib": "^3.0",
                 "vlucas/phpdotenv": "^5.5"
@@ -1081,7 +1082,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-10-27T15:40:21+00:00"
+            "time": "2023-10-27T16:22:47+00:00"
         },
         {
             "name": "jeroennoten/laravel-adminlte",
@@ -1142,6 +1143,65 @@
                 "source": "https://github.com/jeroennoten/Laravel-AdminLTE/tree/v3.9.2"
             },
             "time": "2023-08-25T17:01:05+00:00"
+        },
+        {
+            "name": "jeroenzwart/laravel-csv-seeder",
+            "version": "v1.6.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeroenzwart/laravel-csv-seeder.git",
+                "reference": "8c3aa44517d835893b0a7afcddeeeff1ce62262d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeroenzwart/laravel-csv-seeder/zipball/8c3aa44517d835893b0a7afcddeeeff1ce62262d",
+                "reference": "8c3aa44517d835893b0a7afcddeeeff1ce62262d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": ">=5.0",
+                "illuminate/support": ">=5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeroenZwart\\CsvSeeder\\CsvSeederServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeroenZwart\\CsvSeeder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeroen Zwart",
+                    "email": "mailme@jeroenzwart.nl"
+                }
+            ],
+            "description": "Seed the database with Laravel using CSV files",
+            "homepage": "https://github.com/jeroenzwart/laravel-csv-seeder",
+            "keywords": [
+                "csv",
+                "excel",
+                "laravel",
+                "seed",
+                "seeder",
+                "seeding",
+                "seeds"
+            ],
+            "support": {
+                "issues": "https://github.com/jeroenzwart/laravel-csv-seeder/issues",
+                "source": "https://github.com/jeroenzwart/laravel-csv-seeder/tree/v1.6.3"
+            },
+            "time": "2023-09-18T21:01:59+00:00"
         },
         {
             "name": "laravel/framework",
