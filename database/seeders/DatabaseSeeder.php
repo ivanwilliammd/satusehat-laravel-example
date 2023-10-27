@@ -20,5 +20,6 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call([AdminUserSeeder::class]);
+        $this->call([Icd10Seeder::class]);
     }
 }

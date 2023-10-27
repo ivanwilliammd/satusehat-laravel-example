@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 
 use Satusehat\Integration\OAuth2Client;
 use Satusehat\Integration\KYC;
@@ -47,7 +48,17 @@ class FhirController extends Controller
     public function encounter()
     {
         $encounter = new Encounter;
-        $encounter->addRegistrationId('123456789');
+        $statusHistory = ['arrived' => '{timestamp_kedatangan}',
+                    'inprogress' => '{timestamp_pemeriksaan}',
+                    'finished' => '{timestamp_pulang}'];
+
+        $encounter->addRegistrationId('123456789'); // unique string free text (increments / UUID)
+        $encounter->addStatusHistory($statusHistory); // array of timestamp
+        $encounter->setConsultationMethod('RAJAL'); // RAJAL, IGD, RANAP, HOMECARE, TELEKONSULTASI
+        $encounter->setSubject('P12312312123', 'TESTER'); // ID SATUSEHAT Pasien dan Nama SATUSEHAT
+        $encounter->addParticipant('102938712983', 'dr. X'); // ID SATUSEHAT Dokter, Nama Dokter
+        $encounter->addLocation('A1-001', 'Ruang Poli A1'); // ID SATUSEHAT Location, Nama Poli
+        $encounter->addDiagnosis(Str::uuid()->toString(), 'J06.9'); // ID SATUSEHAT Condition, Kode ICD10
         $encounter = $encounter->json();
 
         return view('fhirdemo', compact('encounter'));

@@ -13,7 +13,7 @@
                 <div class="card-body">
                     <p class="mb-0">Your current ENVIRONMENT is : <b>{{ env('SATUSEHAT_ENV') }}</b></p>
                     {!! isset($token) ? '<p class="mb-0">Your current token is : <b>' . $token . '</b></p>' : '' !!}
-                    {!! isset($encounter) ? '<p class="mb-0">Your encounter example is : </p><pre><code>' . json_encode($encounter, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . '</code></pre>' : '' !!}
+                    {!! isset($encounter) ? '<p class="mb-0">Your encounter example is : </p><pre><code>' . $encounter . '</code></pre>' : '' !!}
                 </div>
             </div>
         </div>
