@@ -58,6 +58,10 @@ Password : satueshatindonesia
 ```
 8. Change the email and password of main master user from menu ```Ubah Kata Sandi```
 
+### Get the most updated code and library
+1. Pull the latest change ```git pull```
+2. Update the library ```composer update```
+
 ### KYC Feature (SATUSEHAT Production Only)
 1. Ensure that you have set your ```SATUSEHAT_ENV``` at .env file with ```PROD```
 2. Add new user from menu ```Daftar Pengguna``` and create new user using valid ```NIK``` and ```Nama``` to be recorded as verificator SATUSEHAT Platform

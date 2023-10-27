@@ -1019,12 +1019,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ivanwilliammd/satusehat-integration.git",
-                "reference": "6623b3c160a4a8e139264ff505584617bcce3dda"
+                "reference": "5fb836c9195aa5b77922a41ac76b851f008f6d01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ivanwilliammd/satusehat-integration/zipball/6623b3c160a4a8e139264ff505584617bcce3dda",
-                "reference": "6623b3c160a4a8e139264ff505584617bcce3dda",
+                "url": "https://api.github.com/repos/ivanwilliammd/satusehat-integration/zipball/5fb836c9195aa5b77922a41ac76b851f008f6d01",
+                "reference": "5fb836c9195aa5b77922a41ac76b851f008f6d01",
                 "shasum": ""
             },
             "require": {
@@ -1074,7 +1074,7 @@
             ],
             "support": {
                 "issues": "https://github.com/ivanwilliammd/satusehat-integration/issues",
-                "source": "https://github.com/ivanwilliammd/satusehat-integration/tree/1.1"
+                "source": "https://github.com/ivanwilliammd/satusehat-integration/tree/1.1]"
             },
             "funding": [
                 {
@@ -1082,7 +1082,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-10-27T16:22:47+00:00"
+            "time": "2023-10-27T16:25:28+00:00"
         },
         {
             "name": "jeroennoten/laravel-adminlte",
