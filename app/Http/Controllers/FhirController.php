@@ -9,6 +9,9 @@ use Illuminate\Support\Str;
 use Satusehat\Integration\OAuth2Client;
 use Satusehat\Integration\KYC;
 use Satusehat\Integration\FHIR\Encounter;
+use Satusehat\Integration\FHIR\Condition;
+
+use Carbon\Carbon;
 
 class FhirController extends Controller
 {
@@ -62,5 +65,23 @@ class FhirController extends Controller
         $encounter = $encounter->json();
 
         return view('fhirdemo', compact('encounter'));
+    }
+
+    // Create Condition Object Test
+    public function condition()
+    {
+        // Condition
+        $condition = new Condition;
+        $condition->addClinicalStatus('active'); // active, inactive, resolved. Default bila tidak dideklarasi = active
+        $condition->addCategory('Diagnosis'); // Diagnosis, Keluhan. Default : Diagnosis
+        $condition->addCode('J06.9'); // Kode ICD10
+        $condition->setSubject('P12312312123', 'TESTER'); // ID SATUSEHAT Pasien dan Nama SATUSEHAT
+        $condition->setEncounter(Str::uuid()->toString()); // ID SATUSEHAT Encounter
+        $condition->setOnsetDateTime(Carbon::now()); // timestamp onset. Timestamp sekarang
+        $condition->setRecordedDate(Carbon::now()); // timestamp recorded. Timestamp sekarang
+        $condition = $condition->json();
+
+
+        return view('fhirdemo', compact('condition'));
     }
 }
