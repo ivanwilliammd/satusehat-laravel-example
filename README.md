@@ -1,6 +1,4 @@
-# SATUSEHAT EMR with SATUSEHAT Integration Library
-Status : In Progress
-
+# SATUSEHAT Integration Library Laravel Example Project
 See [SATUSEHAT Integration Library](https://github.com/ivanwilliammd/satusehat-integration/wiki#getting-started) for more detailed feature or direct installation
 
 ## Fitur SATUSEHAT yang didemokan
