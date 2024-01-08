@@ -1,44 +1,20 @@
 # SATUSEHAT EMR with SATUSEHAT Integration Library
 Status : In Progress
 
-See [SATUSEHAT Integration Library](https://github.com/ivanwilliammd/satusehat-integration) for more detailed feature or direct installation
+See [SATUSEHAT Integration Library](https://github.com/ivanwilliammd/satusehat-integration/wiki#getting-started) for more detailed feature or direct installation
 
-## Fitur SATUSEHAT Fase 1 Rawat Jalan
-Based on : SATUSEHAT Mandate PMK 24 tahun 2022 (Deadline December 2023) : 
+## Fitur SATUSEHAT yang didemokan
 - [x] OAuth2 (POST)
 - [x] KYC SATUSEHAT Platform
-
-- [ ] Organization POST
-- [ ] Organization PUT
-- [ ] Organization GET
-
-- [ ] Location POST
-- [ ] Location PUT
-- [ ] Location GET
-
-- [ ] Patient GET by NIK
-- [ ] Patient GET by ID
-
-- [ ] Practitioner GET by NIK
-- [ ] Practitioner GET by ID
-
-- [ ] Encounter POST
-- [ ] Encounter PUT
-- [ ] Encounter GET
-
-- [ ] Condition POST
-- [ ] Condition PUT
-- [ ] Condition GET
-
 
 ## How to use
 
 ## Option 1 : Use the library
 1. Install the library by running ```composer require ivanwilliammd/satusehat-integration```
 2. Setup your .env based on .env.example template
-3. See [SATUSEHAT Integration Library](https://github.com/ivanwilliammd/satusehat-integration) for more detailed feature or direct installation
+3. See [SATUSEHAT Integration Library](https://github.com/ivanwilliammd/satusehat-integration/wiki#getting-started) for more detailed feature or direct installation
 
-## Option 2 : Use this project as-is
+## Option 2 : Use this project as-is (for KYC feature only)
 
 ### Installation steps (optional for new project)
 1. Clone this repository ```git clone```
