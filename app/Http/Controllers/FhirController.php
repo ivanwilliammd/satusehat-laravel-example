@@ -55,8 +55,11 @@ class FhirController extends Controller
                     'inprogress' => Carbon::now()->subMinutes(5)->toDateTimeString(),
                     'finished' => Carbon::now()->toDateTimeString()];
 
+        $encounter->setArrived(Carbon::now()->subMinutes(15)->toDateTimeString());
+        $encounter->setInProgress(Carbon::now()->subMinutes(5)->toDateTimeString(), Carbon::now()->toDateTimeString());
+        $encounter->setFinished(Carbon::now()->toDateTimeString());
+
         $encounter->addRegistrationId('123456789'); // unique string free text (increments / UUID)
-        $encounter->addStatusHistory($statusHistory); // array of timestamp
         $encounter->setConsultationMethod('RAJAL'); // RAJAL, IGD, RANAP, HOMECARE, TELEKONSULTASI
         $encounter->setSubject('P12312312123', 'TESTER'); // ID SATUSEHAT Pasien dan Nama SATUSEHAT
         $encounter->addParticipant('102938712983', 'dr. X'); // ID SATUSEHAT Dokter, Nama Dokter
