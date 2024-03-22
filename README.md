@@ -1,10 +1,11 @@
 # SATUSEHAT Integration Library Laravel Example Project
 See [SATUSEHAT Integration Library](https://github.com/ivanwilliammd/satusehat-integration/wiki#getting-started) for more detailed feature or direct installation
 
-## Fitur SATUSEHAT yang didemokan
+## Feature Demonstration - [FHIR Controller](app/Http/Controllers/FhirController.php)
 - [x] OAuth2 (POST)
 - [x] KYC SATUSEHAT Platform
-- [x] Contoh declaring Encounter.php
+- [x] Using Encounter FHIR Classes
+- [x] Using Condition FHIR Classes
 
 ## How to use
 
