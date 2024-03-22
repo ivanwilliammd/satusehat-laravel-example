@@ -4,6 +4,7 @@ See [SATUSEHAT Integration Library](https://github.com/ivanwilliammd/satusehat-i
 ## Fitur SATUSEHAT yang didemokan
 - [x] OAuth2 (POST)
 - [x] KYC SATUSEHAT Platform
+- [x] Contoh declaring Encounter.php
 
 ## How to use
 
