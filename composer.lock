@@ -1090,16 +1090,16 @@
         },
         {
             "name": "ivanwilliammd/satusehat-integration",
-            "version": "2.0.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ivanwilliammd/satusehat-integration.git",
-                "reference": "59412399aa51542c60fe2410c2d37879d50e0e15"
+                "reference": "097da94b97961ff9c9840b236d6016b91c46ac81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ivanwilliammd/satusehat-integration/zipball/59412399aa51542c60fe2410c2d37879d50e0e15",
-                "reference": "59412399aa51542c60fe2410c2d37879d50e0e15",
+                "url": "https://api.github.com/repos/ivanwilliammd/satusehat-integration/zipball/097da94b97961ff9c9840b236d6016b91c46ac81",
+                "reference": "097da94b97961ff9c9840b236d6016b91c46ac81",
                 "shasum": ""
             },
             "require": {
@@ -1151,7 +1151,7 @@
             ],
             "support": {
                 "issues": "https://github.com/ivanwilliammd/satusehat-integration/issues",
-                "source": "https://github.com/ivanwilliammd/satusehat-integration/tree/2.0.1"
+                "source": "https://github.com/ivanwilliammd/satusehat-integration/tree/2.1.0"
             },
             "funding": [
                 {
@@ -1159,7 +1159,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-22T17:22:46+00:00"
+            "time": "2024-03-22T17:45:10+00:00"
         },
         {
             "name": "jeroennoten/laravel-adminlte",
