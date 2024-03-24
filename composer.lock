@@ -1090,16 +1090,16 @@
         },
         {
             "name": "ivanwilliammd/satusehat-integration",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ivanwilliammd/satusehat-integration.git",
-                "reference": "097da94b97961ff9c9840b236d6016b91c46ac81"
+                "reference": "c28cb97eda672b1725b5b6265b4acc943c0b8a15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ivanwilliammd/satusehat-integration/zipball/097da94b97961ff9c9840b236d6016b91c46ac81",
-                "reference": "097da94b97961ff9c9840b236d6016b91c46ac81",
+                "url": "https://api.github.com/repos/ivanwilliammd/satusehat-integration/zipball/c28cb97eda672b1725b5b6265b4acc943c0b8a15",
+                "reference": "c28cb97eda672b1725b5b6265b4acc943c0b8a15",
                 "shasum": ""
             },
             "require": {
@@ -1113,11 +1113,11 @@
                 "vlucas/phpdotenv": "^5.5"
             },
             "require-dev": {
-                "pestphp/pest": "^1.0|^2.0"
+                "phpunit/phpunit": "^9.0"
             },
             "suggest": {
                 "laravel/pint": "Minimalist Opionated Code Formatting Extension for PHP 8.0+",
-                "pestphp/pest": "Pest PHP Testing Framework"
+                "pestphp/pest": "Pest PHP Testing Framework for PHP 8.0+"
             },
             "type": "library",
             "extra": {
@@ -1151,7 +1151,7 @@
             ],
             "support": {
                 "issues": "https://github.com/ivanwilliammd/satusehat-integration/issues",
-                "source": "https://github.com/ivanwilliammd/satusehat-integration/tree/2.1.0"
+                "source": "https://github.com/ivanwilliammd/satusehat-integration/tree/2.2.0"
             },
             "funding": [
                 {
@@ -1159,7 +1159,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-22T17:45:10+00:00"
+            "time": "2024-03-24T11:02:50+00:00"
         },
         {
             "name": "jeroennoten/laravel-adminlte",
@@ -7717,16 +7717,16 @@
         },
         {
             "name": "sebastian/environment",
-            "version": "6.0.1",
+            "version": "6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "43c751b41d74f96cbbd4e07b7aec9675651e2951"
+                "reference": "8074dbcd93529b357029f5cc5058fd3e43666984"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/43c751b41d74f96cbbd4e07b7aec9675651e2951",
-                "reference": "43c751b41d74f96cbbd4e07b7aec9675651e2951",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/8074dbcd93529b357029f5cc5058fd3e43666984",
+                "reference": "8074dbcd93529b357029f5cc5058fd3e43666984",
                 "shasum": ""
             },
             "require": {
@@ -7741,7 +7741,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "6.0-dev"
+                    "dev-main": "6.1-dev"
                 }
             },
             "autoload": {
@@ -7769,7 +7769,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/environment/issues",
                 "security": "https://github.com/sebastianbergmann/environment/security/policy",
-                "source": "https://github.com/sebastianbergmann/environment/tree/6.0.1"
+                "source": "https://github.com/sebastianbergmann/environment/tree/6.1.0"
             },
             "funding": [
                 {
@@ -7777,7 +7777,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-04-11T05:39:26+00:00"
+            "time": "2024-03-23T08:47:14+00:00"
         },
         {
             "name": "sebastian/exporter",
