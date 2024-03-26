@@ -10,7 +10,9 @@ use Satusehat\Integration\OAuth2Client;
 use Satusehat\Integration\KYC;
 use Satusehat\Integration\FHIR\Encounter;
 use Satusehat\Integration\FHIR\Condition;
+use Satusehat\Integration\FHIR\Organization;
 
+use Ramsey\Uuid\Uuid;
 use Carbon\Carbon;
 
 class FhirController extends Controller
@@ -51,9 +53,8 @@ class FhirController extends Controller
     public function encounter()
     {
         $encounter = new Encounter;
-        $statusHistory = ['arrived' => Carbon::now()->subMinutes(15)->toDateTimeString(),
-                    'inprogress' => Carbon::now()->subMinutes(5)->toDateTimeString(),
-                    'finished' => Carbon::now()->toDateTimeString()];
+        $uuid = Uuid::uuid4()->toString();
+        $encounter->addRegistrationId($uuid); // unique string free text (increments / UUID)
 
         $encounter->setArrived(Carbon::now()->subMinutes(15)->toDateTimeString());
         $encounter->setInProgress(Carbon::now()->subMinutes(5)->toDateTimeString(), Carbon::now()->toDateTimeString());
@@ -66,6 +67,10 @@ class FhirController extends Controller
         $encounter->addLocation('A1-001', 'Ruang Poli A1'); // ID SATUSEHAT Location, Nama Poli
         $encounter->addDiagnosis(Str::uuid()->toString(), 'J06.9'); // ID SATUSEHAT Condition, Kode ICD10
         $encounter = $encounter->json();
+
+        // // Contoh POST
+        // [$encounter, $res] = $encounter->post();
+        // $encounter = json_encode($res, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 
         return view('fhirdemo', compact('encounter'));
     }
@@ -84,7 +89,29 @@ class FhirController extends Controller
         $condition->setRecordedDate(Carbon::now()->toDateTimeString()); // timestamp recorded. Timestamp sekarang
         $condition = $condition->json();
 
+        // // Uji Coba POST
+        // [$statusCode, $res] = $condition->post();
+        // $condition = json_encode($res, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 
         return view('fhirdemo', compact('condition'));
+    }
+
+    // Create Organization
+    public function organization()
+    {
+        // Condition
+        $organization = new Organization;
+        $uuid = Uuid::uuid4()->toString();
+        $t = 'RS Sakit Cepat Sembuh';
+        $organization->addIdentifier($uuid); // unique string free text (increments / UUID / inisial)
+        $organization->setName($t); // string free text
+        $organization = $organization->json();
+
+        // // Uji Coba POST
+        // [$statusCode, $res] = $organization->post();
+        // $organization = json_encode($res, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+
+
+        return view('fhirdemo', compact('organization'));
     }
 }

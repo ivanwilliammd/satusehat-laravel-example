@@ -15,6 +15,7 @@
                     {!! isset($token) ? '<p class="mb-0">Your current token is : <b>' . $token . '</b></p>' : '' !!}
                     {!! isset($encounter) ? '<p class="mb-0">Your encounter example is : </p><pre><code>' . $encounter . '</code></pre>' : '' !!}
                     {!! isset($condition) ? '<p class="mb-0">Your condition example is : </p><pre><code>' . $condition . '</code></pre>' : '' !!}
+                    {!! isset($organization) ? '<p class="mb-0">Your condition example is : </p><pre><code>' . $organization . '</code></pre>' : '' !!}
                 </div>
             </div>
         </div>

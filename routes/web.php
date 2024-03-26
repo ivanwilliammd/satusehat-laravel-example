@@ -38,4 +38,5 @@ Route::middleware('auth')->group(function () {
     Route::get('/token', [App\Http\Controllers\FHIRController::class, 'token'])->name('token');
     Route::get('/encounter', [App\Http\Controllers\FHIRController::class, 'encounter'])->name('encounter');
     Route::get('/condition', [App\Http\Controllers\FHIRController::class, 'condition'])->name('condition');
+    Route::get('/organization', [App\Http\Controllers\FHIRController::class, 'organization'])->name('organization');
 });

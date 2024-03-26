@@ -350,6 +350,11 @@ return [
             'url'  => 'condition',
             'icon' => 'fas fa-fw fa-stethoscope',
         ],
+        [
+            'text' => 'Organization',
+            'url'  => 'organization',
+            'icon' => 'fas fa-fw fa-building',
+        ],
         // [
         //     'text'    => 'multilevel',
         //     'icon'    => 'fas fa-fw fa-share',
